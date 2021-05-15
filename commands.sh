@@ -25,7 +25,7 @@ curl -X POST localhost:8000/api/songs \
 curl -X GET localhost:8000/api/songs/1 \
     -H 'Accept: application/json'
 
-# Store
+# Update
 curl -X PATCH localhost:8000/api/songs/1 \
     -H 'Accept: application/json' \
     -H 'Content-type: application/json' \
