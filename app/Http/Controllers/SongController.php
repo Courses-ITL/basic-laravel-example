@@ -39,6 +39,7 @@ class SongController extends Controller
     public function show($id)
     {
         return Song::find($id);
+        // select * from songs where songs_id = $id;
     }
 
     /**
@@ -51,6 +52,7 @@ class SongController extends Controller
     public function update(Request $request, $id)
     {
         return Song::find($id)->update($request->all());
+        // update songs set nombre = $request->nombre, autor = $request->autor where songs_id = $id;
     }
 
     /**
@@ -62,6 +64,7 @@ class SongController extends Controller
     public function destroy($id)
     {
         Song::find($id)->delete();
+        // delete songs where songs_id = $id;
 
         return 204;
     }
