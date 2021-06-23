@@ -15,6 +15,7 @@ class SongController extends Controller
     public function index()
     {
         return Song::all();
+        // select * from songs;
     }
 
     /**
@@ -26,6 +27,7 @@ class SongController extends Controller
     public function store(Request $request)
     {
         return Song::create($request->all());
+        /* insert into songs values (nombre, autor) */
     }
 
     /**

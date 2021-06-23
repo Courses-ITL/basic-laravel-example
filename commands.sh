@@ -9,6 +9,9 @@ php artisan make:Controller SongController --api
 # Crear modelo
 php artisan make:Model Song -m
 
+# Correr servidor
+php artisan serve
+
 ## Requests
 
 # Index
